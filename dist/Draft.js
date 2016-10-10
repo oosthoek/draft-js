@@ -8474,7 +8474,7 @@ var Draft =
 	 * The user has begun using an IME input system. Switching to `composite` mode
 	 * allows handling composition input and disables other edit behavior.
 	 */
-	function editOnCompositionStart() {
+	function editOnCompositionStart(e) {
 	  this.setRenderGuard();
 	  this.setMode('composite');
 	  this._onCompositionStart(e);
