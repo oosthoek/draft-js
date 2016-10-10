@@ -6036,6 +6036,7 @@ var Draft =
 	            'aria-owns': readOnly ? null : this.props.ariaOwneeID,
 	            className: cx('public/DraftEditor/content'),
 	            contentEditable: !readOnly,
+	            autoComplete: "off",
 	            'data-testid': this.props.webDriverTestID,
 	            onBeforeInput: this._onBeforeInput,
 	            onBlur: this._onBlur,
